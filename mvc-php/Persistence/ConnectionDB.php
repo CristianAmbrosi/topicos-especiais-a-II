@@ -16,7 +16,7 @@
 			'host'  		=> 'localhost',
 			'dbname' 	=> 'ecomm',
 			'user'   		=> 'root',
-			'pass'   		=> 'Gre#1010'
+			'pass'   		=> ''
 		);
 
  		if(!isset(self::$instance)){
