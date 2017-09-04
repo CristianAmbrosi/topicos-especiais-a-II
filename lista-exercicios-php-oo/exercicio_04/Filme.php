@@ -1,13 +1,18 @@
 <?php 
 
-// include 'Genero.php';
-
 class Filme
 {
 	private $titulo;
-	private $genero
+	private $genero;
 	private $diretor;
 	private $atorPrinc;
+
+	public function __construct($titulo, $genero, $diretor, $atorPrinc){
+		$this->setTitulo($titulo);
+		$this->setGenero($genero);
+		$this->setDiretor($diretor);
+		$this->setAtorPrincipal($atorPrinc);
+	}
 
 	public function setTitulo($titulo){
 		$this->titulo = $titulo;
@@ -17,11 +22,11 @@ class Filme
 		return $this->titulo;
 	}
 
-	public function setGenero($genero){
+	public function setGenero(Genero $genero){
 		$this->genero = $genero;
 	}
 
-	public function getGenero(){
+	public function getGenero() : Genero{
 		return $this->genero;
 	}
 

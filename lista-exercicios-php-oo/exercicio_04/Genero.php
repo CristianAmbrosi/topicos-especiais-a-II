@@ -5,6 +5,11 @@ class Genero
 	private $nomeGenero;
 	private $classificacao;
 
+	public function __construct($nomeGenero, $classificacao){
+		$this->setNomeGenero($nomeGenero);
+		$this->setClassificacao($classificacao);
+	}
+
 	public function setNomeGenero($nomeGenero){
 		$this->nomeGenero = $nomeGenero;
 	}

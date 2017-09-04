@@ -3,12 +3,12 @@
 class Telefone
 {
 	private $numero;
-	// private $cliente;
+	private $cliente;
 	private $totalLigacoes;
 
-	public function __construct($numero/*, $cliente*/){
+	public function __construct($numero, Cliente $cliente){
 		$this->setNumero($numero);
-		// $this->setCliente($cliente);
+		$this->setCliente($cliente);
 		$this->setTotalLigacoes(0);
 	}
 
@@ -20,13 +20,13 @@ class Telefone
 		return $this->numero;
 	}
 
-	// public function setCliente($cliente){
-	// 	$this->cliente = $cliente;
-	// }
+	public function setCliente($cliente){
+		$this->cliente = $cliente;
+	}
 
-	// public function getCliente(){
-	// 	return $this->cliente;
-	// }
+	public function getCliente(){
+		return $this->cliente;
+	}
 
 	public function setTotalLigacoes($totalLigacoes){
 		$this->totalLigacoes = $totalLigacoes;
