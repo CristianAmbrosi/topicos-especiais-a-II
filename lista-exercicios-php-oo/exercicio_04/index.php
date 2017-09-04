@@ -16,6 +16,7 @@
 	<title>Ingressos</title>
 </head>
 <body>
+
 	<?php  
 
 		echo $sessao = "<strong>***** Sessão de Filme *****</strong><br />" .
@@ -28,8 +29,6 @@
 			"<strong>Preço: </strong> R$ " . $ingresso->getPreco() . "<br />";
 
 	?>
-
-
 
 </body>
 </html>
