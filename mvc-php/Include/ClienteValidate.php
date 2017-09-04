@@ -2,8 +2,8 @@
 
 class ClienteValidate
 {
-	public static function testarNumero($paramIdade){
-		if(is_numeric($paramIdade)){
+	public static function testarNumero($paramNum){
+		if(is_numeric($paramNum)){
 			return true;
 		} else {
 			return false;
