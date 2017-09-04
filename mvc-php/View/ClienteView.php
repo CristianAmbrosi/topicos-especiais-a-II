@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<form action="../Controller/UserController.php" method="POST" name="cadUser">
+	<form action="../Controller/ClienteController.php" method="POST" name="cadUser">
 		<input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo"><br />
 		<input type="date" name="dataNasc" id="dataNasc" placeholder="Data de Nascimento"><br />
 		<input type="text" name="cpf" id="cpf" placeholder="CPF"><br />

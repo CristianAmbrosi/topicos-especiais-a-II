@@ -41,8 +41,8 @@
 			$_SESSION['mail'] = $user->email;
 			header("Location: ../View/UserViewResult.php");
 		} else {
-			//$err = serialize('erros');
-			$_SESSION['erros'] = $erros;
+			$err = serialize($erros);
+			$_SESSION['erros'] = $err;
 			header("Location: ../View/UserViewError.php");
 		}
 	} else {

@@ -2,7 +2,7 @@
 	
 	session_start();
 
-	$usuario = $_SESSION['user'];
+	$usuario = $_SESSION['usuario'];
 	$email =  $_SESSION['mail'];
 
 ?>
@@ -16,10 +16,10 @@
 	<h1>Resultado</h1>
 	<?php 
 		if(isset($usuario) && isset($email)){
-			echo '<br />Usuário: ' . $usuario .
-				'<br />E-mail: ' . $email;
-			//unset($usuario); // Destroi os dados, não sessão
-			//unset($email);
+			echo '<br /><b>Usuário:</b> ' . $usuario .
+				'<br /><b>E-mail:</b> ' . $email;
+			unset($usuario); // Destroi os dados, não sessão
+			unset($email);
 		}
 	?>
 </body>

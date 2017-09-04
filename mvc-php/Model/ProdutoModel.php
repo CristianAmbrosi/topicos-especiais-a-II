@@ -1,10 +1,10 @@
 <?php 
 
-	class ProdutoModel
-	{
-		private $descricao;
-		private $codReferencia;
-		private $marca;
+class ProdutoModel
+{
+	private $descricao;
+	private $codReferencia;
+	private $marca;
 
 	public function __construct(){}
 

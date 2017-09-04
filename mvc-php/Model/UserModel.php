@@ -1,13 +1,13 @@
 <?php 
 
-	class UserModel
-	{
-		private $user;
-		private $nome;
-		private $sobrenome;
-		private $idade;
-		private $password;
-		private $email;
+class UserModel
+{
+	private $user;
+	private $nome;
+	private $sobrenome;
+	private $idade;
+	private $password;
+	private $email;
 
 	public function __construct(){}
 

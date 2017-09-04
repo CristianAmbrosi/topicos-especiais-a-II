@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<form action="../Controller/UserController.php" method="POST" name="cadUser">
+	<form action="../Controller/ProdutoController.php" method="POST" name="cadUser">
 		<input type="text" name="descricao" id="descricao" placeholder="Decrição"><br />
 		<input type="text" name="codRef" id="codRef" placeholder="Código de Referência"><br />
 		<input type="text" name="marca" id="marca" placeholder="Marca"><br />
