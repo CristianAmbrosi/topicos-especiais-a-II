@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Habito;
 
 class HabitosConstroller extends Controller
 {
     public function index(){
-    	$nome = "Cristian";
-    	return view('habitos', ['nome' => $nome]);
+    	$habitos = Habito::all();
+    	return view('habitos', ['habitos' => $habitos]);
     }
+
 }

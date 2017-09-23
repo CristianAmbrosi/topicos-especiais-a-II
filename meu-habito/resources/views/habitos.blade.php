@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Habitos</title>
-</head>
-<body>
-	<h1>Olá {{$nome}}</h1>
-	Esta view é para apresentar os hábitos!<br />
-</body>
-</html>
+@extends('app')
+
+@section('content')
+	<div class="container">
+		<h1>Habitos</h1>
+		<table class="table table-striped table-houver">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Descrição</th>
+					<th>Tipo</th>
+					<th>Ação</th>
+				</tr>
+			</thead>
+			<tbody>
+			@foreach($habitos as $hab)
+				<td>{{$hab->nome}}</td>
+				<td>{{$hab->descricao}}</td>
+				<td>{{$hab->tp_habito}}</td>
+				<td>{{$hab->nome}}</td>
+			@endforeach
+			</tbody>
+		</table>
+@endsection
+
