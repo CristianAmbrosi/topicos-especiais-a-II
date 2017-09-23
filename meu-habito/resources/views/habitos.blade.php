@@ -17,9 +17,9 @@
 				<td>{{$hab->nome}}</td>
 				<td>{{$hab->descricao}}</td>
 				<td>{{$hab->tp_habito}}</td>
-				<td>{{$hab->nome}}</td>
 			@endforeach
 			</tbody>
 		</table>
+	</div>
 @endsection
 
