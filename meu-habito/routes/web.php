@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('habitos', 'HabitosConstroller@index');
 Route::get('habitos/create', 'HabitosConstroller@create');
+Route::post('habitos/store', 'HabitosConstroller@store');
