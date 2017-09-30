@@ -9,7 +9,11 @@ class HabitosConstroller extends Controller
 {
     public function index(){
     	$habitos = Habito::all();
-    	return view('habitos', ['habitos' => $habitos]);
+    	return view('habitos.index', ['habitos' => $habitos]);
+    }
+
+    public function create(){
+    	return view('habitos.create');
     }
 
 }
