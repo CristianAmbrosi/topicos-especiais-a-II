@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="container">
-		<h1>Novo Hábito</h1>
+		<h1>Editando hábito: {{$habito->nome}}</h1>
 
 		@if($errors->any())
 			<ul class="alert alert-danger">
@@ -12,27 +12,27 @@
 			</ul>
 		@endif
 
-		{!! Form::open(['route'=>'habitos.store']) !!}
+		{!! Form::open(['route'=>['habitos.update', $habito->id], 'method'=>'put']) !!}
 			<div class="form-group">
 				{!! Form::label('nome', 'Nome:') !!}
-				{!! Form::text('nome', null, ['class' => 'form-control']) !!}
+				{!! Form::text('nome', $habito->nome, ['class' => 'form-control']) !!}
 
 				{!! Form::label('descricao', 'Descrição:') !!}
-				{!! Form::textarea('descricao', null, ['class' => 'form-control']) !!}
+				{!! Form::textarea('descricao', $habito->descricao, ['class' => 'form-control']) !!}
 
 				{!! Form::label('tp_habito', 'Tipo:') !!}
 	      {!! Form::select('tp_habito',
 	              array('B' => 'Bom', 'R' => 'Ruim'),
-	              'M',
+	              $habito->tp_habito,
 	              ['class'=>'form-control']) !!}
 
 				{!! Form::label('objetivo', 'Objetivo:') !!}
-				{!! Form::number('objetivo', null, ['class' => 'form-control']) !!}
+				{!! Form::number('objetivo', $habito->objetivo, ['class' => 'form-control']) !!}
 
 				{!! Form::label('dt_inicio_ctrl', 'Data:') !!}
-				{!! Form::date('dt_inicio_ctrl', '2017-05-18 00:00:00', ['class' => 'form-control']) !!}
+				{!! Form::date('dt_inicio_ctrl', $habito->dt_inicio_ctrl, ['class' => 'form-control']) !!}
 
-				{!! Form::submit('Criar hábito', ['class' => 'btn btn-primary']) !!}
+				{!! Form::submit('Editar hábito', ['class' => 'btn btn-primary']) !!}
 			</div>
 		{!! Form::close() !!}
 	</div>
