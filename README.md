@@ -1,4 +1,4 @@
-# Tópicos Especiais II A - Exercícios PHP e Aplicação de exemplo com Laravel
+Tópicos Especiais II A - Exercícios PHP e Aplicação de exemplo com Laravel
 ===============================================
 
 --------------------
