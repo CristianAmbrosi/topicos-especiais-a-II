@@ -17,7 +17,7 @@ class CreateHistoricosTable extends Migration
             $table->increments('id');
             $table->date('data');
             $table->string('hora')->nullable();
-            $table->integer('habito_id')->unsigned;
+            $table->integer('habito_id')->unsigned();
             $table->foreign('habito_id')->references('id')->on('habitos');
             $table->timestamps();
         });

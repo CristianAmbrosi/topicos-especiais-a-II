@@ -30,6 +30,7 @@
       @endforeach
       </tbody>
     </table>
+    <a href="{{ route('habitos.create') }}" class="btn btn-primary">Novo hábito</a>
   </div>
 @endsection
 

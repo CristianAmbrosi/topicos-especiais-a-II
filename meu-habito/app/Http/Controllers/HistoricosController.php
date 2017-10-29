@@ -29,7 +29,7 @@ class HistoricosController extends Controller
     }
 
     public function edit($id){
-    	$Historico = Historico::find($id);
+    	$historico = Historico::find($id);
     	return view('historicos.edit', compact('historico'));
     }
 

@@ -24,7 +24,7 @@ class HistoricoRequest extends FormRequest
     public function rules()
     {
         return [
-            'date'=>'required',
+            'data'=>'required',
             'habito_id'=>'required'
         ];
     }

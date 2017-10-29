@@ -17,12 +17,13 @@
 						<td>{{ $hist->habito->nome }}</td>
 						<td>{{ $hist->data }}</td>
 						<td>
-							<a href="{{ route('historicos.edit', ['id'=>$hist->id]) }}" class="btn-sm btn-success"></a>
-							<a href="{{ route('historicos.destroy', ['id'=>$hist->id]) }}" class="btn-sm btn-danger"></a>
+							<a href="{{ route('historicos.edit', ['id'=>$hist->id]) }}" class="btn-sm btn-success">Editar</a>
+							<a href="{{ route('historicos.destroy', ['id'=>$hist->id]) }}" class="btn-sm btn-danger">Remover</a>
 						</td>
 					</tr>
 				@endforeach
 			</tbody>
 		</table>
+		<a href="{{ route('historicos.create') }}" class="btn btn-primary">Novo histórico</a>
 	</div>
 @endsection

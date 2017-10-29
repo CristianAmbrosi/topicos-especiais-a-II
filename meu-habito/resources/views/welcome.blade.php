@@ -59,6 +59,19 @@
                 text-transform: uppercase;
             }
 
+            .links-custom {
+                margin-top: 30px;
+            }
+            .links-custom > a{
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -88,6 +101,10 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+                 <div class="links-custom">
+                    <a href="/habitos">Hábitos</a>
+                    <a href="/historicos">Históricos</a>
                 </div>
             </div>
         </div>
