@@ -11,4 +11,8 @@ Tópicos Especiais II A - Exercícios PHP e Aplicação de exemplo com Laravel
 
 	> php artisan migrate
 
+	- Ou
+
+	> php artisan migrate:refresh
+
 	- *Se você já tiver o bando de dados, apague as tabelas dele e rode esse comando, pois pode dar erro de incompatibilidade.*
