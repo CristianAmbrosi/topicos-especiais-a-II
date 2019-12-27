@@ -1735,7 +1735,7 @@
                 "psr/log": "~1.0",
                 "symfony/debug": "~2.8|~3.0",
                 "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/http-foundation": "~3.3"
+                "symfony/http-foundation": "~5.1"
             },
             "conflict": {
                 "symfony/config": "<2.8",
@@ -1939,7 +1939,7 @@
                 "symfony/config": "~2.8|~3.0",
                 "symfony/dependency-injection": "~3.3",
                 "symfony/expression-language": "~2.8|~3.0",
-                "symfony/http-foundation": "~2.8|~3.0",
+                "symfony/http-foundation": "~2.8|~5.1",
                 "symfony/yaml": "~3.3"
             },
             "suggest": {
