@@ -1,0 +1,123 @@
+nav {
+  overflow: visible;
+}
+nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+nav li a:hover {
+  color: #0F0033;
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+nav a.button-collapse {
+  color:black;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #ee6e73;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.parallax-container {
+  min-height: 600px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+  margin-top: 100px;
+}
+.parallax img,
+.parallax video{
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+.parallax-container {
+  color: black;
+}
+.purple.lighten-1 {
+  background-color: #CC0066 !important;
+}
+.teal-text.text-lighten-2 {
+  color: #CC0066 !important;
+}
+.share-buttons{
+  list-style: none;
+}
+.share-buttons li{
+  display: inline;
+}
+
+.send-btn{
+  background-color:  #0F0033;
+}
+.send-btn:hover{
+  background-color: #1E88E5;
+}
+footer.page-footer {
+  margin: 0;
+  background-color:  #0F0033;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .parallax-container {
+    color: #ffffff;
+  }
+}
+
+.parallax-container .section div .btn-custom{
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.parallax-container .section div .btn-custom:hover{
+  background-color: #1E88E5;
+}
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-fixed nav.nav-transparent{
+  z-index: 10;
+  box-shadow: none;
+  background-color: transparent;
+  transition: box-shadow .3s, background-color .3s;
+}
+
+.nav-back{
+  background-color: #0F0033 !important;
+}
